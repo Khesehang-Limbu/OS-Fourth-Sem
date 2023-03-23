@@ -27,4 +27,15 @@ Note: All thes types are only one computer and either one or multiple CPUs
 
 - Distributed OS :
     multiple computers interacted through a communication channel  (OS acts as a intermediate)
+
+- Real Time OS:
+    OS with QUick Response time
+    Types: 
+        Hard Real TIme OS (guarentees quick response)
+        Soft Real Time OS (tries to provide quick response)
     
+Generation of OS:
+-First (Vacuum TUbes and Pligboards, no OS)
+-Second (Transistors, Batch OS)
+-Third (IC, multiprogramming OS)
+Fourth (present, DOS, Windows, Linux)
