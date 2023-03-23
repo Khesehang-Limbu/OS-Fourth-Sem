@@ -1,0 +1,30 @@
+Important topics chapter 1 - Multiprogramming, multiprocessing, multitasking
+Types of OS:
+- Batch OS:
+    Major advantage - similar types of jobs can be batched into one and executed
+    Disadvantages - The user cannot directly communicate with the OS as two layes such as punch card and operator 
+    Example - Payroll System, Bank Statement
+
+Note: In Multiprogramming and multitasking, there is only one processor
+- Multiprogramming OS:
+    Multiple progarms line up in queue  at one point of time, the OS allocates resources (CPU doesn't remain idle). It is non-preemptive
+    Advantage - High CPU utilization, efficient memory utilization (Only one program doesn't gobble up the memory), high CPU throughput (no. of process executed per unit time) (multipe interactive user temrinals)
+    Disadvantages - CPU scheduling is compulsary (lots of jobs are ready to run on CPU) Taking maximum response time to execute (Since there is no vacant slot for a program after it redirecting to input or other, there exists an starvation problem) 
+    - since it is non-preemptive (no priority and executes on first come first out method) preemptive (priority aanusar execute garne)
+
+- Time Sharing (MultiTasking) :
+    Every process is allocated equal quanta of time. (JO suru ma aayo tesle remainder time pauxa, example if a process takes 4s to execute and another takes 3s and other takes 5s, and the quanta is 4s than the first progarm runs for 4s and then another runs for 3 and the remaining is given to the first program not to the third one)
+
+- Multiprocessing operationg system :
+    In multiprocessing, there are multiple processor
+    multiple CPUs communicate with different processors using a shared memory. (if a program takes 2hr to complete, then the OS will breakdown the program into multiple subprocesses and using shared memory, each cores will execute the program, taking less time to execute)
+    
+    Types of multiprocessing:
+    - Symmetric multiprocessing (SMP) OS - (all have equal authority level)
+    - Asymmetric multiprocessing (AMP) OS - two types of prcossor (main CPU is master and other cores are slaves, however master checks the final execution)
+
+Note: All thes types are only one computer and either one or multiple CPUs
+
+- Distributed OS :
+    multiple computers interacted through a communication channel  (OS acts as a intermediate)
+    
