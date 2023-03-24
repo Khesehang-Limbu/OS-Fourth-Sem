@@ -1,0 +1,38 @@
+Resouce Manager (OS)
+Since Os does, Process Scheduling, Resoucre allocation, Memory management, Storage Management, I/O device management, so we can call OS a resource manager
+
+Though OS isn't made of Hardwate, it has access to all the hardware rsources, hence it is called an extended machine
+
+Assignment 4, 5, 7, 8 
+
+
+Introduction to OS Structure
+OS is divided into two specific parts (CPU Execution Mode)
+- User Mode (that doen't need hardware to execute)
+- Kernel Mode (Sensetive process that requires hardware to execute)
+
+- Simple Structure (Example:- MS-DOS)
+    oldest structure or sometimes called MS-DOS structure
+    It doesn't have well-defined structure because, each layers don't have a specific function (exact), all of them can access the entire hardware (System crash is a more possibility)
+
+- Layered structure ():
+    Each functions of the OS are arranged into layers. (The disadvantage of this system is that there is no definitive way of managing layers in the hirerarchy, sequential execution so run time is more)
+    Advantage -
+    - Modularity
+    - Each layer is independent so if a layer crashes it doesn't effect the entire system.
+
+    Kernel
+    The core part of the OS which manages system resources and directly communicates with the hardware resources is called Kernel
+
+Types of Kernel -
+1. Micro Kernel :
+    IPC (Inter Process Communication)
+
+2. Monolithic Kernel :
+
+
+
+
+
+
+
