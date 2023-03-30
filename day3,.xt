@@ -1,0 +1,23 @@
+Process Management
+
+- Process Definition: Program in execution
+- To enable the functionality of the program (set of instruction), all the necessary steps are processes. (set of activities)
+- Program loaded into main memory is process.
+
+CPU is running the process-
+Process parts:
+- Stack (stores : member function, parameters, return type, local variables) Temporary Memory
+- Heap (function : Dynamic Memory Allocation)
+- text (has : Program Counter (PC), Register (Accumulator, base register))
+- Data (global variables, static variables (fixed value))
+
+#The Process Model (How Processes are organized)
+-
+
+
+Process States and Process Transition :
+- New
+- Ready
+- Running
+- Terminated
+- Block/Wait
