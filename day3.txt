@@ -1,0 +1,62 @@
+Process Management
+
+- Process Definition: Program in execution
+- To enable the functionality of the program (set of instruction), all the necessary steps are processes. (set of activities)
+- Program loaded into main memory is process.
+
+CPU is running the process-
+Process parts:
+- Stack (stores : member function, parameters, return type, local variables) Temporary Memory
+- Heap (function : Dynamic Memory Allocation)
+- text (has : Program Counter (PC), Register (Accumulator, base register))
+- Data (global variables, static variables (fixed value))
+
+#The Process Model (How Processes are organized)
+-
+
+Process States and Process Transition :
+- New
+- Ready
+- Running
+- Terminated
+- Block/Wait
+
+- Process Contral Block :
+    - It contains everything that the process does
+    - It is a data structure maintainted by OS for each process. It lies in kernel memory space.
+    - It contians :
+        - Process ID
+        - State
+        - Pointer (Points towards its child processes)
+        - Priority
+        - Program Counter
+        - CPU Registers
+        - I/O information
+        - Accounting Information (How much time is left for each process to complete after every state change)
+        - etc..
+
+    - The data changes dynamically
+
+- Context Switching :
+- Operation on Process (Creation, Termination, Hierarchies, Implementation)
+    Creation:
+        - System Initialization
+        - Using fork (UNIX), Create-Process or other system call when a parent process creates a child process
+        - User's request to create new process
+        - Initiation of a batch job
+    
+    Termination :
+        - Normal Complete (Work Finished)
+        - Error exit
+        - Fatal error, due to bugs
+        - kill process
+
+    Hierarchies : Unix has hierarchical structure for proces management, but Windows doesn't have.
+        When a process is created, the parent process is gicen a special token called handle, which is used to control child processes.
+
+    Implementation :
+        - OS implements the process model by the means of process table, with one entry per process
+        - Each entries of the table are called proces control blocks (PCB)
+        - PCB has log records to recover from unprecedented events
+        
+    
